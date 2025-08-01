@@ -40,12 +40,18 @@ const posts = [
 const newPosts = posts.map((post) => {
   return post.author;
 })
-console.log(newPosts)
+console.log(newPosts);
+console.log("");
 
 const nums = [2, 8, 4, 7, 12, 87];
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari
-
+const filteredNums = nums.filter(num =>{
+  if(num % 2 === 0){
+    return num;
+  }
+})
+console.log(filteredNums);
 
 const pencils = [
   { brand: 'Faber-Castell', weight: 8, sizeInCm: 12 },
