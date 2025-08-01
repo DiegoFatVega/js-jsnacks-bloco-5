@@ -77,6 +77,7 @@ const otherPencils = pencils.filter(pencil => {
 })
 console.log(fiveteenpencils);
 console.log(otherPencils);
+console.log("");
 
 const students = [
   {
@@ -100,7 +101,8 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
-
+const findStudent = students.find(student => student.id ==2);
+console.log(findStudent);
 
 const students_2 = [
   {
