@@ -101,8 +101,9 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
-const findStudent = students.find(student => student.id ==2);
-console.log(findStudent);
+const foundStudent = students.find(student => student.id ==2);
+console.log(foundStudent);
+console.log("");
 
 const students_2 = [
   {
@@ -126,3 +127,11 @@ const students_2 = [
 ];
 
 // Recuperare la classe dello studente Marco Lanci
+let foundPerson;
+const foundStudent_2 = students_2.find((student) =>{
+  if(student.name === 'Marco Lanci'){
+    foundPerson = student.classroom;
+  }
+});
+
+console.log(foundPerson);
