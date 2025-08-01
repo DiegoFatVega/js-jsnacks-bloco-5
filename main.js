@@ -52,6 +52,7 @@ const filteredNums = nums.filter(num =>{
   }
 })
 console.log(filteredNums);
+console.log("");
 
 const pencils = [
   { brand: 'Faber-Castell', weight: 8, sizeInCm: 12 },
@@ -67,8 +68,15 @@ const pencils = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le matite lunghe almeno 15cm. L'altro con le restanti.
+const fiveteenpencils = pencils.filter(pencil => {
+  return pencil.sizeInCm <= 15;
+})
 
-
+const otherPencils = pencils.filter(pencil => {
+  return pencil.sizeInCm > 15;
+})
+console.log(fiveteenpencils);
+console.log(otherPencils);
 
 const students = [
   {
