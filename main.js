@@ -27,6 +27,7 @@ const newNumbers = numbers.map((number)=>{
 })
 
 console.log(newNumbers);
+console.log("");
 
 const posts = [
   { author: 'Marco', date: '12/3/2021', content: 'lorem ipsum...' },
@@ -36,8 +37,10 @@ const posts = [
 ]
 
 // Crea un nuovo array coi nomi di tutti gli autori
-
-
+const newPosts = posts.map((post) => {
+  return post.author;
+})
+console.log(newPosts)
 
 const nums = [2, 8, 4, 7, 12, 87];
 
